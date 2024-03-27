@@ -13,6 +13,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import okhttp3.Headers
 import org.json.JSONObject
+import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun callPokemonAPI(pokemonName: String) {
         val client = AsyncHttpClient()
+        Log.d("Pokemon Name", "pokemon: $pokemonName")
         client["https://pokeapi.co/api/v2/pokemon/$pokemonName", object : JsonHttpResponseHandler() {
             override fun onSuccess(
                 statusCode: Int,
@@ -83,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 
         val baseExperience = pokemon.getInt("base_experience")
 
-        findViewById<TextView>(R.id.pokemon_name).text = pokemon.getString("name")
+        findViewById<TextView>(R.id.pokemon_name).text = pokemon.getString("name").toString().capitalize(Locale.ROOT)
         findViewById<TextView>(R.id.pokemon_types).text = "Abilities: ${abilitiesList.joinToString(", ")}"
         findViewById<TextView>(R.id.pokemon_base_exp).text = "Types: ${typesList.joinToString(", ")}"
         findViewById<TextView>(R.id.pokemon_abilities).text = "Base Experience: $baseExperience"
