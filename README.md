@@ -28,10 +28,6 @@ The following STRETCH features are implemented:
   - The query I added takes pokemon name as input and makes an API call. It then returns the name, type and abilities of that pokemon. 
 - [X] Build a UI to allow users to add that query
 
-The following EXTRA features are implemented:
-
-- [ ] List anything else that you added to improve the app!
-
 ## API Choice
 
 My chosen API for this project is **Poke API**.
@@ -51,7 +47,7 @@ GIF created with **ScreenToGif**
 
 ## Notes
 
-Here's a place for any other notes on the app, it's creation process, or what you learned this unit!
+I successfully implemented API integration using AsyncHTTPClient in my Pokedex app, displaying three pieces of data for each API entry and allowing users to query specific Pokemon information with a dynamically updated UI, showcasing my skills in Android development and API handling.
 
 ## License
 
