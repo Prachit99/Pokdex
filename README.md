@@ -45,7 +45,7 @@ GIF created with **ScreenToGif**
 
 ## Notes
 
-I successfully implemented API integration using AsyncHTTPClient in my Pokedex app, displaying three pieces of data for each API entry and allowing users to query specific Pokemon information with a dynamically updated UI, showcasing my skills in Android development and API handling.
+successfully integrated AsyncHTTPClient in my Pokedex app, leveraging RecyclerView to display crucial Pokemon data like name, type, and image in a scrollable list. This implementation not only enhances user interaction by providing a dynamic and organized UI but also demonstrates my proficiency in Android development and efficient API handling.
 
 ## License
 
