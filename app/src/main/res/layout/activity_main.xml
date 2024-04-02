@@ -49,7 +49,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter a Pokemon name" />
+            android:hint="Enter a Pokemon type" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -113,5 +113,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pokemon_base_exp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pokemonRecycleView"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pokemon_name"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/pokemon_item"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
