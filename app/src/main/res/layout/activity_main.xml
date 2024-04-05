@@ -12,11 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/wlcm_str"
-        android:textColor="@color/white"
         android:layout_marginTop="50dp"
         android:layout_marginStart="30dp"
-        android:textAppearance="@style/title_style"
-        android:textSize="20sp"
+        android:textAppearance="@style/sub_title_style"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,12 +36,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusTopStart="10dp"
-        android:textColorHint="@color/white"
-        app:hintTextColor="@color/white"
+        style="@style/input_box_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -51,6 +44,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:hint="@string/input_hint_string" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,9 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/search_button"
-        android:backgroundTint="@color/title"
-        android:textColor="@color/black"
-        app:cornerRadius="10dp"
+        style="@style/button_Style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_pokemon" />

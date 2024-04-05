@@ -4,4 +4,6 @@
     <string name="app_title">Pokedex</string>
     <string name="input_hint_string">Enter a Pokemon type</string>
     <string name="search_button">Search</string>
+    <string name="pokemon_name">Pokemon Name</string>
+    <string name="pokemon_type">Type: Pokemon Type</string>
 </resources>

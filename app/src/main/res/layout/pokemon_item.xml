@@ -22,20 +22,18 @@
             android:id="@+id/pokemonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:textSize="18dp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="Pokemon Name" />
+            android:textAppearance="@style/pokemon_style"
+            android:text="@string/pokemon_name" />
 
         <TextView
             android:id="@+id/pokemonType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:textSize="16dp"
             android:textColor="@color/white"
-            android:text="Type: Pokemon Type" />
+            android:textAppearance="@style/pokemon_style"
+            android:text="@string/pokemon_type" />
 
     </LinearLayout>
 
