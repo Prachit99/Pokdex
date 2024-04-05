@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pokedex</string>
+    <string name="wlcm_str">Welcome to</string>
+    <string name="app_title">Pokedex</string>
+    <string name="input_hint_string">Enter a Pokemon type</string>
+    <string name="search_button">Search</string>
 </resources>

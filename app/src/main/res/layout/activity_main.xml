@@ -11,11 +11,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to"
+        android:text="@string/wlcm_str"
         android:textColor="@color/white"
         android:layout_marginTop="50dp"
         android:layout_marginStart="30dp"
-        android:textSize="20dp"
+        android:textAppearance="@style/title_style"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,10 +24,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pokedex"
-        android:textColor="@color/title"
         android:layout_marginStart="30dp"
-        android:textSize="30dp"
+        android:text="@string/app_title"
+        android:textColor="@color/title"
+        android:textAppearance="@style/title_style"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -49,7 +51,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter a Pokemon type" />
+            android:hint="@string/input_hint_string" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -57,7 +59,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Search"
+        android:text="@string/search_button"
         android:backgroundTint="@color/title"
         android:textColor="@color/black"
         app:cornerRadius="10dp"
@@ -73,7 +75,7 @@
         android:layout_marginTop="30dp"
         android:textStyle="bold"
         android:textColor="@color/title"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pokemon_finder" />
@@ -84,7 +86,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +98,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +111,7 @@
         android:text=""
         android:layout_marginTop="10dp"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pokemon_base_exp" />
