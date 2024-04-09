@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun addDividerItemDecoration() {
         val itemDecoration: DividerItemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        val divider: Drawable? = ContextCompat.getDrawable(this, R.drawable.divider_line) // Use your divider drawable
+        val divider: Drawable? = ContextCompat.getDrawable(this, R.drawable.divider_line)
         divider?.let {
             itemDecoration.setDrawable(it)
             pokemonRecycleView.addItemDecoration(itemDecoration)
